@@ -66,7 +66,7 @@
       const btnLabel = s.mode === "checkin" ? "簽到 Check in →" : s.mode === "qa" ? "送出問題 →" : "送出 Send →";
 
       app.innerHTML = `
-        <img class="page-mascot" src="/avatar.png" alt="Summer" />
+        <img class="page-mascot" src="/avatar.png" alt="Ivy" />
         <div class="rule"></div>
         <div class="kicker"><span class="live">LIVE · <span class="modetag">${MODE_LABEL[s.mode]}</span></span><span>CHECK·IN WALL · ${today}</span></div>
         <div class="rule thin"></div>
@@ -88,7 +88,7 @@
         <div class="count"><span>${s.mode==="qa"?"問題 Questions":s.mode==="checkin"?"簽到 Check-ins":"留言 Entries"}</span><span class="ln"></span><b id="count">00</b></div>
         <div class="feed" id="feed"></div>
         <div class="privacy">送出即表示同意你的名字／內容會即時顯示在課程牆上。資料僅供本堂課使用，場次建立 30 天後自動刪除。</div>
-        <footer>✦ Summer's Lab ✦</footer>
+        <footer>✦ Ivy's Lab ✦</footer>
       `;
 
       if (window.QRCode) new QRCode(document.getElementById("qrcode"), { text: location.href, width: 80, height: 80, colorDark: "#1c1b16", colorLight: "#ffffff" });
